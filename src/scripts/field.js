@@ -6,7 +6,7 @@ export const addPlant = (seedObj) => {
 }
 
 export const usePlants = () => {
-    return fieldArr.slice();
+    return fieldArr;
 }
 
 // console.log(fieldArr);

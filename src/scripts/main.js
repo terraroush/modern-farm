@@ -6,20 +6,24 @@ import { createPotato } from "./seeds/potato.js"
 import { createSoybean } from "./seeds/soybean.js"
 import { createSunflower } from "./seeds/sunflower.js"
 import { createWheat } from "./seeds/wheat.js"
+import { plantSeeds } from "./tractor.js"
+
 
 const yearlyPlan = createPlan();
 // console.log(yearlyPlan);
 
 const potatoSeed = createPotato();
+addPlant(potatoSeed)
+usePlants();
+console.log(addPlant(potatoSeed));
+
 const asparagusSeed = createAsparagus();
 const cornSeed = createCorn();
 const soybeanSeed = createSoybean();
 const sunflowerSeed = createSunflower();
 const wheatSeed = createWheat();
 
-// console.log(cornSeed[1]);
-// addPlant(wheatSeed);
-// console.log(usePlants());
+console.log(asparagusSeed);
 
 
 

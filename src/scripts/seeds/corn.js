@@ -1,5 +1,5 @@
 export const createCorn = () => {
-    return [
+    const corn = [
         {
         type: "Corn",
         height: 180,
@@ -11,4 +11,5 @@ export const createCorn = () => {
         output: 6
         }
     ]
+    return corn;
 }

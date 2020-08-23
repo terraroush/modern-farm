@@ -1,9 +1,12 @@
-export const field = [];
+
+const fieldArr = [];
 
 export const addPlant = (seedObj) => {
-    field.push(seedObj);
+    fieldArr.push(seedObj);
 }
 
 export const usePlants = () => {
-    field.slice();
+    return fieldArr.slice();
 }
+
+// console.log(fieldArr);

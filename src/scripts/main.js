@@ -1,28 +1,25 @@
-import { createPlan } from './plan.js';
-import { createAsparagus } from "./seeds/asparagus.js";
-import { createSunflower } from "./seeds/sunflower.js";
-import { createWheat } from "./seeds/wheat.js";
-import { createPotato } from "./seeds/potato.js";
-import { createSoybean } from "./seeds/soybean.js";
-import { createCorn } from "./seeds/corn.js";
-import { addPlant } from "./field.js";
-import { usePlants } from "./field.js";
-import { field } from "./field.js";
-
+import { createPlan } from "./plan.js"
+import { addPlant, usePlants } from "./field.js"
+import { createCorn } from "./seeds/corn.js"
+import { createAsparagus } from "./seeds/asparagus.js"
+import { createPotato } from "./seeds/potato.js"
+import { createSoybean } from "./seeds/soybean.js"
+import { createSunflower } from "./seeds/sunflower.js"
+import { createWheat } from "./seeds/wheat.js"
 
 const yearlyPlan = createPlan();
-console.log(yearlyPlan);
+// console.log(yearlyPlan);
 
-const asparagusSeed = createAsparagus();
-// console.log(asparagusSeed);
-const soybeanSeed = createSoybean();
-// console.log(soybeanSeed);
-const sunflowerSeed = createSunflower();
-// console.log(sunflowerSeed);
-const wheatSeed = createWheat();
-// console.log(wheatSeed);
 const potatoSeed = createPotato();
-// console.log(potatoSeed);
+const asparagusSeed = createAsparagus();
 const cornSeed = createCorn();
-// console.log(cornSeed);
+const soybeanSeed = createSoybean();
+const sunflowerSeed = createSunflower();
+const wheatSeed = createWheat();
+
+// console.log(cornSeed[1]);
+// addPlant(wheatSeed);
+// console.log(usePlants());
+
+
 
